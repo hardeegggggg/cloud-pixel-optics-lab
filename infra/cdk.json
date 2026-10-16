@@ -1,0 +1,8 @@
+{
+  "app": "python app.py",
+  "context": {
+    "maxVcpus": 16,
+    "retainData": false
+  }
+}
+

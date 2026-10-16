@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.pytest-tmp/
+.coverage
+cdk.out*/
+.jsii-cache/
+data/*.jsonl
+output/
+deployment/*.json
+infra/node_modules/
+
+

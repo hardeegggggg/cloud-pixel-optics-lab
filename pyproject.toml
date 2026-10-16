@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cloud-pixel-optics-lab"
+version = "0.1.0"
+description = "Teaching scaffold for cloud-parallel pixel optical simulation"
+requires-python = ">=3.10"
+dependencies = [
+  "boto3>=1.35,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<9",
+]
+
+[project.scripts]
+pixelcloud-generate = "pixelcloud.generate_cases:main"
+pixelcloud-run = "pixelcloud.batch_runner:main"
+pixelcloud-local-sweep = "pixelcloud.local_sweep:main"
+pixelcloud-aggregate = "pixelcloud.aggregate:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --basetemp=.pytest-tmp"
+

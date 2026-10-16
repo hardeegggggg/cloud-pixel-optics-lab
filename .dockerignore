@@ -1,0 +1,12 @@
+.git
+.gitignore
+.venv
+**/__pycache__
+**/*.pyc
+.pytest_cache
+**/.jsii-cache
+infra/cdk.out*
+data
+output
+tests
+

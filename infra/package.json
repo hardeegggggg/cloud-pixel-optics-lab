@@ -1,0 +1,15 @@
+{
+  "name": "cloud-pixel-optics-infra",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pinned AWS CDK CLI for Cloud Pixel Optics Lab",
+  "devDependencies": {
+    "aws-cdk": "2.1145.0"
+  },
+  "scripts": {
+    "synth": "cdk synth --strict",
+    "diff": "cdk diff",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy"
+  }
+}
